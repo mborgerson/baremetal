@@ -8,7 +8,7 @@ MEMORY
 SECTIONS
 {
 	/* Place the Multiboot header at the very front */
-	.hdr : {
+	.multiboot : {
 		_load_addr = .;
 		KEEP(*(.multiboot_hdr*))
 	} > RAM

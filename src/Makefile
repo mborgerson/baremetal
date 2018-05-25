@@ -51,7 +51,7 @@ clean:
 .PRECIOUS: %.o
 
 .PHONY: run
-run:
-	qemu-system-i386 -kernel $(TARGET) --vnc none --serial stdio
+run: $(TARGET)
+	qemu-system-i386 -kernel $(TARGET) -append "Hello World" --vnc none --serial stdio
 
 -include $(DEPS)

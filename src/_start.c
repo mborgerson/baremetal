@@ -86,6 +86,8 @@ void init(void *multiboot_info_ptr)
 		argc += 1;
 	}
 
+	puts((const char *)multiboot_info->cmdline);
+
 	/* Call statically allocated object constructors (found in .init_array) */
 	for (i=0; i < (unsigned)_init_array_count; i++) {
 		_init_array_addr[i]();

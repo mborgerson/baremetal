@@ -58,6 +58,7 @@ int puts(const char *s)
 	for (c=0; *s; c++, s++) {
 		putchar(*s);
 	}
+	putchar('\n');
 
 	return c;
 }
