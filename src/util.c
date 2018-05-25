@@ -35,7 +35,6 @@ uint8_t io_read_8(uint16_t port)
 #define SERIAL_PORT SERIAL_COM1
 
 #define SERIAL_THR 0
-#define SERIAL_RBR 0
 #define SERIAL_LSR 5
 
 /*
