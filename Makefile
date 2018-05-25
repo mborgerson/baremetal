@@ -19,7 +19,7 @@ NASM_FLAGS   = -felf
 OBJCOPY      = objcopy
 OBJCOPYFLAGS = --output-target=binary
 TARGET       = prog.bin
-OBJECTS      = _start.o main.o libc.o multiboot.o serial.o x86.o
+OBJECTS      = _start.o main.o util.o
 DEPS         = $(OBJECTS:.o=.d)
 
 all: $(TARGET)

@@ -21,4 +21,18 @@ typedef unsigned short uint16_t;
 typedef unsigned int   uint32_t;
 typedef unsigned int   size_t;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void io_write_8(uint16_t port, uint8_t val);
+uint8_t io_read_8(uint16_t port);
+int putchar(int c);
+int puts(const char *s);
+void *memset(void *ptr, int data, size_t len);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

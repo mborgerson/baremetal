@@ -1,5 +1,4 @@
 #include "util.h"
-#include "libc.h"
 
 using namespace std;
 
